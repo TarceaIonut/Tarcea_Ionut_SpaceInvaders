@@ -97,12 +97,12 @@ public class DbService {
 
     public void insertNewGame(String userName, int score) throws SQLException {
         userName = userName.toUpperCase();
-        try{
+        try {
             PreparedStatement ps = con.prepareStatement("insert into games (user_id, score) values ((select id from users where username = ?), ?);");
             ps.setString(1, userName);
             ps.setInt(2, score);
             ps.executeUpdate();
-        }catch (SQLException e){
+        } catch (SQLException e) {
             //System.out.println(userName + " " + score);
 
             System.out.println("Username already picked");
