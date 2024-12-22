@@ -1,9 +1,11 @@
+package ro.itarcea.spaceInvaders.gui;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class ErrorMessage extends JDialog implements ActionListener,GameComponent {
+public class ErrorMessage extends JDialog implements ActionListener, GameComponent {
     public ErrorMessage(String title, String message, Display d, SignUpDialog signDialog) {
         super(signDialog, true);
         this.setTitle(title);

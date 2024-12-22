@@ -1,3 +1,7 @@
+package ro.itarcea.spaceInvaders.gui.gameElements;
+
+import ro.itarcea.spaceInvaders.control.GameData;
+
 import java.io.IOException;
 
 public abstract class Invader extends Entity implements Movable {
@@ -17,7 +21,7 @@ public abstract class Invader extends Entity implements Movable {
             else direction = 'r';
         }
         if (this.collide(direction, speed)) {
-            System.out.println("Problem at Invader.Colide");
+            System.out.println("Problem at ro.itarcea.spaceInvadors.gui.gameElements.Invader.Colide");
         }
         else{
             if (direction == 'l') {

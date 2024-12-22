@@ -1,3 +1,9 @@
+package ro.itarcea.spaceInvaders.gui.gameElements.impl;
+
+import ro.itarcea.spaceInvaders.gui.AllSprites;
+import ro.itarcea.spaceInvaders.gui.gameElements.Invader;
+import ro.itarcea.spaceInvaders.gui.gameElements.Movable;
+
 import java.awt.image.BufferedImage;
 import java.io.IOException;
 

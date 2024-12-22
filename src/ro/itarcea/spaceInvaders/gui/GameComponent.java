@@ -1,3 +1,5 @@
+package ro.itarcea.spaceInvaders.gui;
+
 import javax.swing.*;
 import java.awt.*;
 

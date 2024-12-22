@@ -1,4 +1,6 @@
-import service.DbService;
+package ro.itarcea.spaceInvaders.gui;
+
+import ro.itarcea.spaceInvaders.service.DbService;
 
 import java.sql.SQLException;
 

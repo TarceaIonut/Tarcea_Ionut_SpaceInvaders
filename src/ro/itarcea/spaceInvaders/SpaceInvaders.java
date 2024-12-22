@@ -1,4 +1,8 @@
-import service.DbService;
+package ro.itarcea.spaceInvaders;
+
+import ro.itarcea.spaceInvaders.control.GameData;
+import ro.itarcea.spaceInvaders.gui.Display;
+import ro.itarcea.spaceInvaders.service.DbService;
 
 import java.awt.*;
 import java.io.IOException;
@@ -6,7 +10,7 @@ import java.sql.SQLException;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-public class Main{
+public class SpaceInvaders {
     public static void main(String[] args) throws IOException, InterruptedException, FontFormatException, SQLException, ClassNotFoundException {
         DbService service = new DbService();
         GameData gameData = new GameData();

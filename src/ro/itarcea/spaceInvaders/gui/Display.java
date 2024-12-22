@@ -1,4 +1,9 @@
-import service.DbService;
+package ro.itarcea.spaceInvaders.gui;
+
+import ro.itarcea.spaceInvaders.control.GameData;
+import ro.itarcea.spaceInvaders.gui.gameElements.Entity;
+import ro.itarcea.spaceInvaders.gui.gameElements.impl.Projectile;
+import ro.itarcea.spaceInvaders.service.DbService;
 
 import javax.swing.*;
 import java.awt.*;
@@ -10,7 +15,7 @@ import java.io.IOException;
 import java.sql.SQLException;
 import java.util.List;
 
-public class Display extends JFrame implements ActionListener,GameComponent{
+public class Display extends JFrame implements ActionListener,  GameComponent {
 
     public BufferedImage fullResolutionImage = new BufferedImage(256*4, 224*4, BufferedImage.TYPE_INT_RGB);
     private String user;
@@ -50,13 +55,13 @@ public class Display extends JFrame implements ActionListener,GameComponent{
         pixelFontNotSet = Font.createFont(Font.TRUETYPE_FONT, new File("C:\\Users\\Ionut\\IdeaProjects\\SpaceInvaders\\Assets\\HomeVideo-BLG6G.ttf"));
         pixelFont = pixelFontNotSet.deriveFont(40f);
         this.scaleFactor = 4;
-        this.setTitle("Display");
+        this.setTitle("ro.itarcea.spaceInvadors.gui.Display");
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         //this.setPreferredSize(new Dimension( 260 * scaleFactor, 224 * scaleFactor));
         this.setLayout(new BorderLayout(0, 0));
         this.setVisible(true);
-        // = new ImagePanel(new BufferedImage(100,100,BufferedImage.TYPE_INT_RGB), new Defender(0, 0));
-        panelGame = new ImagePanel(new BufferedImage(GameData.width * scaleFactor,GameData.height * scaleFactor, BufferedImage.TYPE_INT_RGB), gameData.player);
+        // = new ro.itarcea.spaceInvadors.gui.ImagePanel(new BufferedImage(100,100,BufferedImage.TYPE_INT_RGB), new ro.itarcea.spaceInvadors.gui.gameElements.impl.Defender(0, 0));
+        panelGame = new ImagePanel(new BufferedImage(GameData.width * scaleFactor, GameData.height * scaleFactor, BufferedImage.TYPE_INT_RGB), gameData.player);
         panelGame.setPreferredSize(new Dimension( GameData.width * scaleFactor, GameData.height * scaleFactor));
 
         JPanel scorePanel = new JPanel();

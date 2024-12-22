@@ -1,3 +1,10 @@
+package ro.itarcea.spaceInvaders.gui.gameElements.impl;
+
+import ro.itarcea.spaceInvaders.control.GameData;
+import ro.itarcea.spaceInvaders.gui.AllSprites;
+import ro.itarcea.spaceInvaders.gui.gameElements.Entity;
+import ro.itarcea.spaceInvaders.gui.gameElements.Movable;
+
 import java.awt.image.BufferedImage;
 
 public class Projectile extends Entity implements Movable {
@@ -29,7 +36,7 @@ public class Projectile extends Entity implements Movable {
             if (super.spriteNumber % 4 == 0)
                 return AllSprites.projectile_4;
         }
-        System.out.println("Unknown team: Problem at Projectile: pozH = " + super.locationHeight + " pozW = " + super.locationWidth);
+        System.out.println("Unknown team: Problem at ro.itarcea.spaceInvadors.gui.gameElements.impl.Projectile: pozH = " + super.locationHeight + " pozW = " + super.locationWidth);
         return AllSprites.spriteDefender;
     }
 

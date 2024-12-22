@@ -1,11 +1,16 @@
-import java.awt.event.KeyEvent;
-import java.awt.event.KeyListener;
+package ro.itarcea.spaceInvaders.gui.gameElements.impl;
+
+import ro.itarcea.spaceInvaders.control.GameData;
+import ro.itarcea.spaceInvaders.gui.AllSprites;
+import ro.itarcea.spaceInvaders.gui.gameElements.Entity;
+import ro.itarcea.spaceInvaders.gui.gameElements.Movable;
+
 import java.awt.image.BufferedImage;
 
 public class Defender extends Entity implements Movable {
-    int health = 2;
-    char inputMovement = 'u';
-    char inputFire = 'u';
+    public int health = 2;
+    public char inputMovement = 'u';
+    public char inputFire = 'u';
 
     public Defender(int pozH, int pozW){
         this.locationHeight = pozH;

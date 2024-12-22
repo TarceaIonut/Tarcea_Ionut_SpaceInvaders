@@ -1,3 +1,5 @@
+package ro.itarcea.spaceInvaders.gui;
+
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
 import java.io.File;

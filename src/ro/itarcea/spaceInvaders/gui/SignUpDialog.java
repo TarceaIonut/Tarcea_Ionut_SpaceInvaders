@@ -1,4 +1,6 @@
-import service.DbService;
+package ro.itarcea.spaceInvaders.gui;
+
+import ro.itarcea.spaceInvaders.service.DbService;
 
 import javax.swing.*;
 import java.awt.*;
@@ -6,7 +8,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.sql.SQLException;
 
-public class SignUpDialog extends JDialog implements ActionListener,GameComponent {
+public class SignUpDialog extends JDialog implements ActionListener, GameComponent {
     Display d;
     private final DbService service;
     JPanel p;

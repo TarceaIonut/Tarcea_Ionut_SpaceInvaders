@@ -1,4 +1,4 @@
-package service;
+package ro.itarcea.spaceInvaders.service;
 
 import java.sql.*;
 import java.util.*;

@@ -1,3 +1,8 @@
+package ro.itarcea.spaceInvaders.control;
+
+import ro.itarcea.spaceInvaders.gui.gameElements.*;
+import ro.itarcea.spaceInvaders.gui.gameElements.impl.*;
+
 import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.util.*;
@@ -96,7 +101,7 @@ public class GameData {
             invaders[4][j] = new InvaderL1(currHeight + 60, currWidth + j * 15);
         }
 //        for (int j = 0; j < 11; j++) {
-//            invaders[5][j] = new InvaderL1(currHeight + 75, currWidth + j * 15);
+//            invaders[5][j] = new ro.itarcea.spaceInvadors.gui.gameElements.impl.InvaderL1(currHeight + 75, currWidth + j * 15);
 //        }
     }
 
@@ -193,11 +198,11 @@ public class GameData {
             }
             if (e instanceof Invader) {
                 ((Invader) e).health = 1;
-                //System.out.println("Invader Killed");
+                //System.out.println("ro.itarcea.spaceInvadors.gui.gameElements.Invader Killed");
             }
             if (e instanceof Defender) {
                 ((Defender) e).health = 1;
-                //System.out.println("Defender Killed");
+                //System.out.println("ro.itarcea.spaceInvadors.gui.gameElements.impl.Defender Killed");
             }
             enemies.remove(e);
             friendlies.remove(e);

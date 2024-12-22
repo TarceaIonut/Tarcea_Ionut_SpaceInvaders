@@ -1,6 +1,7 @@
+package ro.itarcea.spaceInvaders.gui.gameElements;
+
 import java.awt.*;
 import java.awt.image.BufferedImage;
-import java.util.Objects;
 
 public abstract class Entity {
     public int locationHeight = 0, locationWidth = 0;
