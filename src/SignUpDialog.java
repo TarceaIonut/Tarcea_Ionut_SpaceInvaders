@@ -7,7 +7,7 @@ import java.awt.event.ActionListener;
 import java.sql.SQLException;
 
 public class SignUpDialog extends JDialog implements ActionListener,GameComponent {
-    DisplayOld d;
+    Display d;
     private final DbService service;
     JPanel p;
     JButton okButton = new JButton("OK");
@@ -16,7 +16,7 @@ public class SignUpDialog extends JDialog implements ActionListener,GameComponen
     JLabel passwordLabel = new JLabel("Password:");
     JTextField nameField = new JTextField();
     JPasswordField passwordField = new JPasswordField();
-    public SignUpDialog(String name, DisplayOld d, DbService service) {
+    public SignUpDialog(String name, Display d, DbService service) {
         this.d = d;
         this.service = service;
         this.setTitle(name);

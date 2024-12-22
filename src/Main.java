@@ -1,6 +1,5 @@
 import service.DbService;
 
-import javax.swing.*;
 import java.awt.*;
 import java.io.IOException;
 import java.sql.SQLException;
@@ -11,7 +10,7 @@ public class Main{
     public static void main(String[] args) throws IOException, InterruptedException, FontFormatException, SQLException, ClassNotFoundException {
         DbService service = new DbService();
         GameData gameData = new GameData();
-        DisplayOld display = new DisplayOld(gameData, service);
+        Display display = new Display(gameData, service);
         long startTime = System.currentTimeMillis();
         long endTime = System.currentTimeMillis() + 100;
         int T = 50;

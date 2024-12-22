@@ -4,7 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class ErrorMessage extends JDialog implements ActionListener,GameComponent {
-    public ErrorMessage(String title, String message, DisplayOld d, SignUpDialog signDialog) {
+    public ErrorMessage(String title, String message, Display d, SignUpDialog signDialog) {
         super(signDialog, true);
         this.setTitle(title);
         JButton ok = new JButton("OK");

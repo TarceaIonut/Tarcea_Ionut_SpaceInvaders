@@ -10,7 +10,7 @@ import java.io.IOException;
 import java.sql.SQLException;
 import java.util.List;
 
-public class DisplayOld extends JFrame implements ActionListener,GameComponent{
+public class Display extends JFrame implements ActionListener,GameComponent{
 
     public BufferedImage fullResolutionImage = new BufferedImage(256*4, 224*4, BufferedImage.TYPE_INT_RGB);
     private String user;
@@ -34,7 +34,7 @@ public class DisplayOld extends JFrame implements ActionListener,GameComponent{
     private boolean showStart;
     public boolean buttonPressed = false;
 
-    public DisplayOld(GameData gameData, DbService service) throws IOException, FontFormatException {
+    public Display(GameData gameData, DbService service) throws IOException, FontFormatException {
         try{
             fullResolutionImage = new BufferedImage(gameData.fullImage.getWidth() * scaleFactor, gameData.fullImage.getHeight() * scaleFactor, BufferedImage.TYPE_INT_ARGB);
         }

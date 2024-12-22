@@ -3,9 +3,9 @@ import service.DbService;
 import java.sql.SQLException;
 
 public class SignInDialog extends SignUpDialog {
-    private final DisplayOld d;
+    private final Display d;
 
-    public SignInDialog(String name, DisplayOld d, DbService service) {
+    public SignInDialog(String name, Display d, DbService service) {
         super(name, d, service);
         this.d = d;
     }
